@@ -27,7 +27,7 @@ with col1:
 with col2:
     # Plot histogram for sex of patients
     fig, ax = plt.subplots(figsize=(6, 3))
-    if 1==0: # Evaluate True to show plot
-        df['sex'].hist(bins = 10, ax=ax)
-        fig.suptitle("Sex Distribution")
-        st.pyplot(fig)
+    #if 1==0: # Evaluate True to show plot
+    df['sex'].hist(bins = 10, ax=ax)
+    fig.suptitle("Sex Distribution")
+    st.pyplot(fig)
