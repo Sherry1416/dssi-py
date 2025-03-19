@@ -10,7 +10,7 @@ apptitle = 'DSSI Toy App'
 
 st.set_page_config(page_title=apptitle, layout='wide')
 
-st.title('My First Streamlit Application')
+st.title('Yueli Streamlit Application')
 st.write('Reference: https://docs.streamlit.io/en/stable/api.html#display-data')
 st.balloons() 
 
@@ -25,9 +25,9 @@ with col1:
     # Display dataframe as an interactive table
     st.dataframe(df, use_container_width=True)
 with col2:
-    # Plot histogram for age of patients
+    # Plot histogram for sex of patients
     fig, ax = plt.subplots(figsize=(6, 3))
     if 1==0: # Evaluate True to show plot
-        df['age'].hist(bins = 10, ax=ax)
-        fig.suptitle("Age Distribution")
+        df['sex'].hist(bins = 10, ax=ax)
+        fig.suptitle("Sex Distribution")
         st.pyplot(fig)
